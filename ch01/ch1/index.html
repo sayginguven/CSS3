@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#checkthisForInternal{
+			background-color: #eee;
+		}
+
+		.checkthatForInternal{
+			color:blue;
+		}
+
+
+
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<!-- inline css -->
+	<div style="background-color: lightgrey;">
+		<p>'normal' text here </p>
+		<p style="color:red">'highlight' text here</p>
+	</div>
+
+	<!-- internal css -->
+	<div id="checkthisForInternal">
+		<p>'normal' text here </p>
+		<p class="checkthatForInternal">'highlight' text here</p>
+	</div>
+
+	<!-- external css -->
+	<div id="checkthisForExternal">
+		<p>'normal' text here </p>
+		<p class="checkthatForExternal">'highlight' text here</p>
+	</div>
+	
+
+
+</body>
+</html>
