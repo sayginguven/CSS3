@@ -1,7 +1,11 @@
 #checkthisForExternal{
-	background-color: lightblue;
+	background-color: #888;
 }
 
 .checkthatForExternal{
-	color:indigo;
+	color:rgba(0,0,255,0.7);
+}
+
+body{
+	background-color:hsl(240,100%,15%);
 }

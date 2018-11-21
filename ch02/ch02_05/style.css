@@ -1,0 +1,28 @@
+@import "_borderbox.css";
+
+
+div{
+	font-size: 32px;
+	width: 40%;
+	margin: 30px auto;
+}
+
+a{
+	font-family: arial;
+	font-size: 32px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+li{
+	list-style-type: none;
+	float: right;
+	width: 200px;
+}
+
+ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}

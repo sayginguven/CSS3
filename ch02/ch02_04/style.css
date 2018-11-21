@@ -1,0 +1,64 @@
+.quotes:before{
+	color:grey;
+	content : "Quotes: ";
+}
+
+.quotes:after{
+	color:grey;
+	content: "\21E2 Albert Einstein";
+}
+
+.quotes{
+	color:red;
+}
+
+#firstPar{
+	background-color: LightGoldenRodYellow;
+	margin: 2px;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+#secondPar{
+	background-color: lightgreen;
+	margin: 2px;
+	border: 1px solid red;
+	padding: 20px;
+}
+
+input{
+	margin: 3px;
+	border: 1px dashed green;
+	padding: 10px;
+}
+#test{
+
+	width: calc(100%-40px);
+	background: purple;
+	margin: 40px;
+}
+
+div{
+	width: 100px;
+	height: 100px;
+	background-color: lightgrey;
+}
+
+span{
+	background-color:lightgrey;
+	width: 100px;
+	height: 100px;
+	/*display: inline-block;*/
+	text-align: center;
+}
+
+a{
+	background-color: yellow;
+	width: 200px;
+	height: 200px;
+	display: block;
+	text-align: center;
+	line-height: 200px;
+
+}
+

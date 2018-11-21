@@ -1,0 +1,17 @@
+.wrapper{
+	overflow: hidden;
+}
+
+.box{
+	width: 20px;
+	height: 20px;
+	border: 1px solid red;
+	float: left;
+	box-sizing: border-box;
+	padding:20px; 
+}
+
+.box:nth-child(odd){
+	background: #eee;
+	border: 1px solid green;
+}
