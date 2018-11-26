@@ -1,0 +1,33 @@
+.box{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	line-height: 100px;
+	text-align: center;
+}
+
+.box1{
+	background-color: tomato;
+	position: relative;
+	left: 50px;
+	z-index: 100;
+}
+
+.box2{
+	position: relative;
+	background-color: lightgreen;
+	top: 50px;
+	z-index: 200;
+}
+
+.box3{
+	position: relative;
+	background-color: lightblue;
+	right: 50px;
+	top: 100px;
+	z-index: 300;
+}
+
+.doNotDisplay{
+	display: none;
+}

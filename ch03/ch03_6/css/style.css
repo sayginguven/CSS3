@@ -1,0 +1,55 @@
+*{
+	margin: 0px;
+	padding: 0px	
+}
+
+.img{
+	  background-image: url("winston-chen-1173337-unsplash.jpg");
+	  background-position: center center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  width: 100%;
+	  height: 100vh;
+}
+
+.welcome{
+	position: relative;
+}
+
+.welcome__message{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left:0;
+	width: 100%;
+	text-align: center;
+}
+
+.welcome__title{
+	color:#FAFAFA;
+	font-size: 4em;
+	margin: 0px;
+}
+
+.welcome__description{
+	color:#FEDDCC;
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+.btn{
+	text-decoration: none;
+	padding: 5px 15px;
+	font-size: 25px;
+	background-color: #6D6333;
+	color:#FAFAFA;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px; 
+}
+
+.btn:hover{
+	background-color: #FAFAFA;
+	color:#6D6333;
+}

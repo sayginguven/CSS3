@@ -1,0 +1,30 @@
+.box{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: pink;
+}
+
+.box1{
+	position: relative;
+}
+
+.box2{
+	position: relative;
+	right: 50px;
+}
+
+.box3{
+	position: relative;
+	border-radius: 0%;
+	transform: rotate(45deg);
+	right: 181px;
+	top: 27px;
+}
+
+.doNotDisplay{
+	display: none;
+}
