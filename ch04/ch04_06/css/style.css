@@ -1,0 +1,44 @@
+.conatinerRow{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	flex-wrap: wrap; 
+}
+
+.card__image{
+	border-radius: 15px;
+}
+
+.card{
+	background-color: #eef;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 	20px;
+}
+
+.card__title{
+	text-shadow: 1px 1px grey;
+}
+
+.card__body{
+	text-decoration:  underline;
+}
+
+.card--dark{
+	background-color: #656275;
+}
+
+.card__title--light, .card__body--light{
+	color:  #D7D5EB;
+}
+
+.card:nth-of-type(1){
+    order: 1;
+}
+
+.card:nth-of-type(2){
+    order:  2;
+}
+

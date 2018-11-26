@@ -1,0 +1,15 @@
+.green{
+	color:green;
+	padding:6px;
+	border: 1px solid green;
+}
+
+a{
+	color:blue;
+}
+a.inherit {
+	color:inherit;
+}
+a.initial {
+	color: initial;
+}

@@ -74,6 +74,11 @@ html {
 	/*display: none;*/
 }
 
+.hideTitle:hover + p{
+	visibility: visible;
+	/*display: block;*/
+}
+
 footer{
 	height: 200px;
 }
