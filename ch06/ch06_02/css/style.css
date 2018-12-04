@@ -1,0 +1,98 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 20px;
+	height: 120px;
+	width: 250px;
+	background-color: lightblue;
+	animation-name: moveTheBox;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+}
+
+label{
+	font-size: 1.2rem;
+}
+input{
+	height: 2rem;
+	display: block;
+}
+[type=submit]{
+	display: block;
+	background-color: tomato;
+	font-size: 1em;
+	width: 200px;
+	margin-top: 2px; 
+}
+
+@keyframes bounce {
+	0%{margin-top: 100px;}
+	25%{margin-top: 200px;}
+	50%{margin-top: 400px;}
+	75%{margin-top: 200px;}
+	100%{margin-top: 100px;}
+}
+
+@keyframes pushRight{
+	from{margin-left: 100%;}
+	to{margin-left: 0%;}
+}
+
+@keyframes moveTheBox{
+	0%{
+		right: 50px;
+		bottom: 50px;
+	}
+	10%{
+		right: 10px;
+		bottom: 10px;
+	}
+	20%{
+		right: 45px;
+		bottom: 45px;
+	}
+	30%{
+		right: 15px;
+		bottom: 15px;
+	}
+	40%{
+		right: 35px;
+		bottom: 35px;
+	}
+	50%{
+		right: 5px;
+		bottom: 5px;
+	}
+	60%{
+		right: 45px;
+		bottom: 45px;
+	}
+
+	70%{
+		right: 25px;
+		bottom: 25px;
+	}
+	80%{
+		right: 45px;
+		bottom: 55px;
+	}
+	90%{
+		right: 25px;
+		bottom: 25px;
+	}
+	100%{
+		right: 0px;
+		bottom: 0px;
+	}
+
+
+
+
+}

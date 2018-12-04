@@ -1,0 +1,138 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/**********************
+menu and image starts*/
+.topnav {
+	width: 100%;
+    background-color: rgba(49, 49, 49, 0.7);
+    height: 40px;
+    position: fixed;
+    top: 0px; 
+    z-index: 200;
+}
+
+li.icon {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    display: none;
+}
+
+a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+li {
+    display: inline;
+}
+
+.afterNav{
+	background-image: linear-gradient(rgba(0,255,0,0.3), rgba(49, 49, 49, 0.1)), url('../images/nature.jpg');
+	background-repeat:  no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size:cover;
+	height: 100vh;
+}
+
+h1{
+	text-align: center;
+	z-index: 100;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 8rem;
+	color: white;
+    text-shadow: 5px 5px 3px tomato;
+	line-height: 100vh;
+}
+
+/********************* 
+menu and image ends */
+
+
+/* menu display starts
+*********************/
+.topnav.responsive li:not(.icon){
+    display: block;
+    width: 200px;
+}
+
+.topnav.responsive {
+    height: auto;
+}
+
+/******************
+menu display ends*/
+
+
+/*article and explanation start 
+******************************/
+.nextPart{
+    width: 100%;
+    padding-top: 10%;
+}
+
+.part1{
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+
+h2.part1{
+    width: 40%;
+    line-height: 400px;
+    text-align: center;
+}
+
+p.part1{
+    width: 40%;
+    text-align: justify;
+}
+
+/*****************************
+article and explanation ends*/
+
+
+/* responsive part starts 
+************************/
+@media screen and (max-width: 576px){
+    .topnav li{
+        display: none;
+    }
+
+    li.icon {
+    	display: block;
+    }
+
+    h1{
+        font-size: 6rem;
+    }
+
+    h2.part1{
+	    width: 100%;
+	    margin-bottom: 5%;
+	    line-height: 40px;
+    }
+    
+    p.part1{
+	    width: 80%;
+    	margin: 0 10%;
+    	text-align: justify;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 4rem;
+    }
+}
+
+/*********************
+responsive part ends*/

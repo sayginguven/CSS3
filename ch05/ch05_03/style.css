@@ -1,0 +1,41 @@
+#cats ul{
+    padding: 0;
+}
+
+#cats li{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    list-style-type: none; 
+}
+
+#cats li img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#cats li a{
+    color: #333;
+    text-decoration: none;
+    float: left;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 768px){
+    #cats li{
+        width: 48%;
+    }
+
+    #cats li a{
+        font-size: 1.7rem;
+    }
+
+}
+
+
+@media screen and (max-width: 576px){
+    #cats li{
+        width: 98%;
+    }
+}
