@@ -1,0 +1,56 @@
+:root{
+    --btn-confirm-color : #62e59f;
+}
+
+div{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid lightgrey;
+}
+label{
+    display: block;
+}
+
+
+input:last-child:hover {
+    background-color: tomato;
+}
+
+.check{
+    animation: check 0.5s;
+    animation-fill-mode: forwards;
+}
+
+[type=submit]{
+    width: 25%;
+    background: lightblue;
+}
+
+.correct{
+    background-color: var(--btn-confirm-color);
+}
+
+@keyframes check {
+/*   0% { transform: translateX(7px); border:2px solid red;  }
+    20% { transform: translateX(-7px); border:2px solid red; }
+    40% { transform: translateX(7px); border:2px solid red; }
+    60% { transform: translateX(-7px); border:2px solid red; }
+    80% { transform: translateX(7px); border:2px solid red; }
+    100% { transform: translateX(-7px); border:2px solid red; }*/
+
+
+    from{
+        transform: scale(1.0);
+        border:2px solid red;
+    }
+    to{
+        transform: scale(1.1);
+        border:2px solid red;
+    }
+}

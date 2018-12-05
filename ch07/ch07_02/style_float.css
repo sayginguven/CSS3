@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: arial;
+  font-size: 120%;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+nav>ul>li{
+  position: relative;
+  float: left;
+}
+
+nav>ul>li>a{
+  margin-right: 20px;
+}
+
+li>ul{
+  padding-top: 10px;
+  display: none;
+}
+
+nav>ul>li:hover > ul{
+  display: block;
+}
+
+nav>ul>li>ul:hover > li{
+  display: block;
+}
+
+nav>ul>li>ul{
+  width: 300px;
+  position: absolute;
+}
+
+nav::after { 
+  content: "";
+  display: block; 
+  clear: both;
+}

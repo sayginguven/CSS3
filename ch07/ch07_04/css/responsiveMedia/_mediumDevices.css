@@ -1,0 +1,6 @@
+/* @media (max-width: 768px){  if media query defined in html, do not declare one more time in here*/ 
+	.container{
+		-ms-grid-columns: (1fr)[2];
+		    grid-template-columns: repeat(2, 1fr); /* fraction */
+	}
+/* } */

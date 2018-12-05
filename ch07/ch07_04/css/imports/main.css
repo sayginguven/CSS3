@@ -1,0 +1,91 @@
+.container{
+	display: -ms-grid;
+	display: grid;
+	/* grid-template-columns: 25% 25% 25% 25%; */
+				/* or */
+	-ms-grid-columns: (1fr)[4];
+	    grid-template-columns: repeat(4, 1fr); /* fraction */
+	
+	/* grid-template-rows: 33% 33% 33%; *//* this is for aligning the height between cards */
+	
+	/* grid-template-columns: 400px repeat(2, 1fr); */ /* first card fixed 400px next 2 will share the size   */
+	
+	/* grid-column-gap: 5px; */
+	/* grid-row-gap: 5px; */
+	         /* or */
+	grid-gap: 5px 5px;
+}
+
+.gridItems{
+	text-align: center;
+	border:  1px solid grey;
+	overflow: hidden;
+}
+
+img{
+	width: 100%;
+	height: 200px;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-webkit-transform:scale(1.0);
+	    -ms-transform:scale(1.0);
+	        transform:scale(1.0);
+	-webkit-transition: 1s -webkit-transform ease-in-out;
+	transition: 1s -webkit-transform ease-in-out;
+	-o-transition: 1s transform ease-in-out;
+	transition: 1s transform ease-in-out;
+	transition: 1s transform ease-in-out, 1s -webkit-transform ease-in-out;
+
+	/* defined in keyframes */
+	-webkit-animation: 1s focus ease;
+	        animation: 1s focus ease;
+}
+
+img:hover{
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-filter: grayscale(0%);
+	        filter: grayscale(0%);
+}
+
+img:hover+h2{
+	text-shadow: 1px 1px grey;
+}
+
+h2{
+	margin: 4%;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2em;
+}
+
+/* you can add filters with css*/
+/* black and white effect */
+[src='images/image8.jpg']{
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+}
+
+
+@-webkit-keyframes focus{
+	0%{
+		-webkit-transform:scale(1.0);
+		        transform:scale(1.0);
+	}
+	100%{
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+}
+
+
+@keyframes focus{
+	0%{
+		-webkit-transform:scale(1.0);
+		        transform:scale(1.0);
+	}
+	100%{
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+}
